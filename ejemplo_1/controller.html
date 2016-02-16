@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+  <head>
+    <title>Example</title>
+    <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="myapp.js"></script>
+
+  </head>
+  <body>
+    <div ng-controller="myController as first">
+      <p>{{first.name}}</p>
+
+      <p>{{first.number}} + 1 = {{first.number+1}}</p>
+
+      <p>{{first.number}} / 2 = {{first.number/2}}</p>
+
+      <p>{{first}}</p>
+
+      <button ng-click="first.clickeame()">CLICKEAME</button>
+
+      <button ng-click="first.clickdos()">CLICKEAME 2</button>
+
+
+      <ul>
+        <li ng-repeat="person in first.people">
+          {{person.name}} tiene {{person.age}} años
+        </li>
+      </ul>
+
+      <input type="text" ng-model="search.place">
+      <table style="border:1px solid red;" border="1">
+        <tr ng-repeat="person in first.people | filter : search" ng-if="person.age > 10">
+            <td>{{$index+1}}</td>
+            <td style>{{person.name}}</td>
+            <td>{{person.age}}</td>
+            <td>{{person.place}}</td>
+            <td><button ng-click="first.addage(person) ">ADD</button></td>
+        </tr>
+      </table>
+
+
+
+    </div>
+  <div ng-controller="otherController as other">
+      {{other.name}}
+    </div>
+  </body>
+</html>
