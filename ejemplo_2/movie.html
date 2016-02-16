@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html ng-app="movies">
+  <head>
+    <title>Example</title>
+    <meta charset="utf-8"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+      <script type="text/javascript" src="movie.js"></script>
+      <style>
+          .movie{
+              border:1px solid #CCC;
+              float:left;
+              width: 240px;
+              padding: 10px;
+              margin:10px;
+              text-align: center;
+          }
+
+          .movie h1{
+              font-size: 20px;
+          }
+          .movie img{
+              width: 40%;
+              float: left;
+          }
+          .movie li{
+              list-style: none;
+          }
+
+          input{
+              width:100%;
+              padding:5px;
+              border:1px solid #ccc;
+          }
+
+      </style>
+  </head>
+  <body>
+    <div ng-controller="movieController as movie">
+        <input type="text" ng-model="search.name">
+
+        <div ng-repeat="m in movie.collection | filter : search  | orderBy: 'name' : 0 "  class="movie">
+            <h1>{{m.name}}</h1>
+            <h2>{{m.year}}, {{m.category}}</h2>
+
+            <img ng-src="{{m.img}}">
+
+            <ul>
+                <li ng-repeat="p in m.cast">{{p}}</li>
+            </ul>
+        </div>
+
+    </div>
+  </body>
+</html>
