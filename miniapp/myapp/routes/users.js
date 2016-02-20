@@ -5,25 +5,29 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/test');
 
 var userSchema = mongoose.Schema({
-  name: String,
-  app : String
+  name: String
 });
 
+/* User ----> users */
 var User = mongoose.model('User', userSchema);
+
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
+  /* db.users.find( {} )*/
+  /* MODELO.find({}  , FUNCTION (ERROR, COLLECTION) )*/
 
   User.find({}, function(err, users) {
-    var userMap = [];
-
+    var user_array = [];
+    /*  user_array.push() */
     users.forEach(function(user) {
-      userMap.push( user);
+      user_array.push( user);
     });
 
-    res.send(userMap);
+    res.send(user_array);
   });
 
+  //res.send('respond with a resource');
 });
 
 module.exports = router;

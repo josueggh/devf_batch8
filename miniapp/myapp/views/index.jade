@@ -2,9 +2,16 @@ extends layout
 
 block content
   h1= title
+  h1(class="hola" title="hola") Hola
   p Welcome to #{title}
-  div(ng-controller="mycontroller as mcs")
-
-    div(ng-repeat="user in mcs.users")
-      {{user.name}} {{user.app}}
-  
+  div(ng-controller="mycontroller as mc")
+    p Search
+    input(ng-model="search.name", placeholder="name")
+    input(ng-model="search.app",placeholder="last name")
+    select(ng-model="search.location")
+      option SFO
+      option MEX
+    ul
+      li(ng-repeat="user in mc.users | filter: search")
+        {{user.name}} {{user.app}}
+        button(ng-click="mc.show(user)") imprimir
