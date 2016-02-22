@@ -1,0 +1,26 @@
+<section class="spotify-player">
+    <div class="search">
+        <form ng-submit="spotify.search()">
+        <input ng-model="spotify.song_name"><button>Search track</button>
+        <form>
+    </div>
+    <div class="player" ng-if="spotify.playlist">
+        <div class="results">
+            <a ng-click="spotify.play(song)" ng-repeat="song in spotify.playlist" class="song">
+                <span class="title">{{song.name}}</span>
+                <span>{{spotify.milliseconds( song.duration_ms ) }}</span>
+                <span>{{song.artists[0].name}}</span>
+            </a>
+        </div>
+        <div class="song-detail">
+            <div class="header">
+                <img ng-src="{{spotify.song.album.images[2].url}}"/>
+                <span class="title">{{spotify.song.name}}</span>
+                <span>Duration: {{spotify.milliseconds(spotify.song.duration_ms) }}</span>
+                <span>Popularity: {{spotify.song.popularity}}</span>
+                <span>Album: {{spotify.song.album.name}}</span>
+                <span>{{spotify.song.artists[0].name}}</span>
+            </div>
+        </div>
+    </div>
+</section>
