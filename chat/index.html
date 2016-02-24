@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html ng-app="chat">
+  <head>
+    <title>Example</title>
+    <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <script src="/app/angularfire.min.js"></script>
+    <script src="/app/app.js"></script>
+      <style>
+          *{color:#999;}
+          span{color:#444;}
+          span.globe{ background: #2091c1; border-radius:10px;}
+      </style>
+  </head>
+  <body>
+    <div ng-controller="chatController as chat">
+
+        <form ng-submit="chat.addMessage()">
+            <input ng-model="chat.nick" placeholder="Nickname">
+            <input ng-model="chat.text" placeholder="Your message">
+            <button>Add Message</button>
+        </form>
+
+        <div ng-repeat="message in chat.messages">
+            <span>{{message.nick}} :</span> <span class="globe">{{message.message}}</span>
+        </div>
+
+
+    </div>
+  </body>
+</html>
