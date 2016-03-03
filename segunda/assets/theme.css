@@ -1,0 +1,34 @@
+body nav .brand-logo {
+  background: url("/assets/i/box.png") no-repeat;
+  background-size: 40px;
+  background-position: 5px;
+  background-position-x: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-left: 60px;
+}
+body section#categories .card-title {
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  font-size: 22px;
+}
+body section#categories .card-title.small {
+  padding: 8px 10px;
+  font-size: 19px;
+}
+body section#most .card .price {
+  position: absolute;
+  z-index: 1;
+  padding: 20px;
+  font-size: 25px;
+}
+body section#most .card.black .card-image .card-title {
+  color: #000000;
+}
+body section#most .card .card-title {
+  font-size: 18px;
+  padding: 5px 20px;
+  line-height: 17px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html ng-app="segundamano">
+<head>
+  <title>Segunda Mano</title>
+  <meta charset="utf-8"/>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100italic,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link rel="stylesheet" href="./assets/theme.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<div class="navbar-fixed">
+  <nav class="deep-purple darken-1">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">SegundaMano</a>
+      <ul class="right hide-on-med-and-down">
+        <li>¿Eres miembro?</li>
+        <li><a href="#">Registrate</a></li>
+        <li><a href="#">Entra a tu cuenta</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<main ng-view></main>
+
+<footer class="page-footer  purple darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l4 ">
+        <h5 class="white-text">Nosotros</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Atención al cliente</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Guía de seguridad</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Reglas de publicación</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Condiciones de uso</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Publicidad comercial</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Ayuda</a></li>
+        </ul>
+
+      </div>
+      <div class="col l4 ">
+        <h5 class="white-text">Visita otro países</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Argentina</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">México</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Brasil</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Colombia</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Grecia</a></li>
+        </ul>
+      </div>
+      <div class="col l4 ">
+        <h5 class="white-text">Contacto</h5>
+        <ul>
+          <li><a  class="grey-text text-lighten-3" href="#!">Teléfono: 55 55 55 55</a></li>
+          <li><a  class="grey-text text-lighten-3" href="#!">Escribenos</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2016 Segunda Mano
+      <a class="grey-text text-lighten-4 right" href="#!">Términos y condiciones</a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/routes/routes.js"></script>
+<script src="app/home/ctrl_home.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+</body>
+</html>
