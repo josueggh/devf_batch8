@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Inmuebles",
+    "img": "/assets/i/realstate.jpg",
+    "slug": "categoria/inmuebles",
+    "id": "1"
+  },
+  {
+    "name": "Vehículos",
+    "img": "/assets/i/car.jpg",
+    "slug": "categoria/vehiculos",
+    "id": "2"
+  },
+  {
+    "name": "Hogar",
+    "img": "/assets/i/home.jpg",
+    "slug": "categoria/hogar",
+    "id": "3"
+  },
+  {
+    "name": "Tiempo libre",
+    "img": "/assets/i/tiempolibre.jpg",
+    "slug": "categoria/tiempo-libre",
+    "id": "4"
+  },
+  {
+    "name": "Negocios",
+    "img": "/assets/i/negocios.jpg",
+    "slug": "categoria/negocios",
+    "id": "5"
+  },
+  {
+    "name": "Deportes",
+    "img": "/assets/i/sport.jpg",
+    "slug": "categoria/deportes",
+    "id": "6"
+  },
+  {
+    "name": "Videojuegos",
+    "img": "/assets/i/game.jpg",
+    "slug": "categoria/videojuegos",
+    "id": "7"
+  }
+]

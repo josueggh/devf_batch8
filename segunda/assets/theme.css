@@ -32,3 +32,10 @@ body section#most .card .card-title {
   padding: 5px 20px;
   line-height: 17px;
 }
+body section#mexico .collection-item {
+  color: #ff6f00;
+}
+body section#mexico .collection-item.active {
+  background: #ff6f00;
+  color: white;
+}

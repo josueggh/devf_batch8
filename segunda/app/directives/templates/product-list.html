@@ -1,0 +1,45 @@
+<section id="most" class="container">
+    <h5>Productos populares</h5>
+    <div class="row">
+        <div class="col m3">
+            <div class="card {{pd.class}}" ng-repeat="pd in product.products | limitTo:3">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <span class="price" ng-if="pd.price">{{pd.price | currency:"€"}}</span>
+                    <img class="activator" ng-src="{{pd.img}}">
+                    <span class="card-title">{{pd.name}}<small><br>{{pd.place}}</small></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col m3">
+            <div class="card {{pd.class}}" ng-repeat="pd in product.products | limitTo:2:3">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <span class="price" ng-if="pd.price">{{pd.price | currency:"€"}}</span>
+                    <img class="activator" ng-src="{{pd.img}}">
+                    <span class="card-title">{{pd.name}}<small><br>{{pd.place}}</small></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col m3">
+            <div class="card {{pd.class}}" ng-repeat="pd in product.products | limitTo:3:5">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <span class="price" ng-if="pd.price">{{pd.price | currency:"€"}}</span>
+                    <img class="activator" ng-src="{{pd.img}}">
+                    <span class="card-title">{{pd.name}}<small><br>{{pd.place}}</small></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col m3">
+            <div class="card {{pd.class}}" ng-repeat="pd in product.products | limitTo:2:8">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <span class="price" ng-if="pd.price">{{pd.price | currency:"€"}}</span>
+                    <img class="activator" ng-src="{{pd.img}}">
+                    <span class="card-title">{{pd.name}}<small><br>{{pd.place}}</small></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

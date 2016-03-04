@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Lámpara Hipster",
+    "img": "/assets/i/lamp.jpg",
+    "slug": "/product/lampara-hipster",
+    "price": 90,
+    "category": "home",
+    "class": "black",
+    "place": "DF"
+  },
+  {
+    "id": 2,
+    "name": "Radio 1986",
+    "img": "/assets/i/radio.jpg",
+    "slug": "/product/radio-1986",
+    "price": 170,
+    "category": "home",
+    "class": "black",
+    "place": "DF"
+  },
+  {
+    "id": 3,
+    "name": "",
+    "img": "/assets/i/girls.jpg",
+    "slug": "",
+    "price": 0,
+    "category": "promo",
+    "class": "black",
+    "place": ""
+  },
+  {
+    "id": 4,
+    "name": "Game of Thrones BR",
+    "img": "/assets/i/got.jpg",
+    "slug": "/movies/game-of-thrones",
+    "price": 0,
+    "category": "Edición especial",
+    "class": "",
+    "place": "DF"
+  },
+  {
+    "id": 5,
+    "name": "Máscara Kylo Ren",
+    "img": "/assets/i/kyloren.jpg",
+    "slug": "/toys/kyloren",
+    "price": 980,
+    "category": "FX",
+    "class": "black",
+    "place": "DF"
+  },
+  {
+    "id": 6,
+    "name": "",
+    "img": "/assets/i/boys.jpg",
+    "slug": "/toys/kyloren",
+    "price": 0,
+    "category": "promo",
+    "class": "black",
+    "place": "DF"
+  },
+  {
+    "id": 7,
+    "name": "",
+    "img": "/assets/i/halo5.jpg",
+    "slug": "/games/halo-5",
+    "price": 700,
+    "category": "games",
+    "class": "black",
+    "place": "DF"
+  },
+  {
+    "id": 8,
+    "name": "",
+    "img": "/assets/i/xbox.jpg",
+    "slug": "/games/xbox",
+    "price": 0,
+    "category": "games",
+    "class": "",
+    "place": ""
+  },
+  {
+    "id": 9,
+    "name": "Desarmador",
+    "img": "/assets/i/desarmador.jpg",
+    "slug": "/construccion/desarmador",
+    "price": 70,
+    "category": "home",
+    "class": "black",
+    "place": "DF"
+  },
+  {
+    "id": 10,
+    "name": "Daft Punk",
+    "img": "/assets/i/daft.jpg",
+    "slug": "/game/daft",
+    "price": 999,
+    "category": "home",
+    "class": "black",
+    "place": "DF"
+  }
+]

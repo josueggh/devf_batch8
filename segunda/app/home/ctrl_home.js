@@ -4,8 +4,12 @@
   angular.module('segundamano')
     .controller('homeCtrl',homeCtrl);
 
-  function homeCtrl(){
+  homeCtrl.$inject = ["categories","products"];
+
+  function homeCtrl(categories, products){
     var home = this;
+    home.categories = categories;
+    home.products = products;
   }
 
 })();
